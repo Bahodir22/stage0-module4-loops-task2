@@ -17,7 +17,7 @@ public class PrimeNumbers {
                 primeCheckNumber++;
             }
             if (divisibleCount == 0 && n != 1) {
-                System.out.print(n);
+                System.out.println(n);
             }
             n++;
         }
