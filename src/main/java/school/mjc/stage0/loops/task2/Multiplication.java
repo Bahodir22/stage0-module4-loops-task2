@@ -7,6 +7,5 @@ public class Multiplication {
             System.out.println(multiplyByAndToInclusive*i);
             i++;
         }
-
     }
 }

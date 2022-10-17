@@ -6,6 +6,7 @@ public class PowerOfTwo {
         while (power>i){
             p *= 2;
             System.out.println("2^"+power+"="+p);
+            i++;
         }
 
     }
