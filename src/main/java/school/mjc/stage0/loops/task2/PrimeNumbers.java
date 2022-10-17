@@ -2,13 +2,25 @@ package school.mjc.stage0.loops.task2;
 
 public class PrimeNumbers {
     public void printPrimeNumbers(int printToInclusive) {
-        int i=1, k=0;
-        while (i<=printToInclusive){
-            if (printToInclusive % i==0 && k<3){
-                System.out.println(i);
+        int primeCheckNumber;
+        int n = 1;
+        int divisibleCount;
+
+        while (n <= printToInclusive) {
+            divisibleCount = 0;
+            primeCheckNumber = 2;
+            while (primeCheckNumber <= n / 2) {
+                if (n % primeCheckNumber == 0) {
+                    divisibleCount++;
+                    break;
+                }
+                primeCheckNumber++;
             }
-            i++;
-            k++;
+            if (divisibleCount == 0 && n != 1) {
+                System.out.print(n);
+            }
+            n++;
         }
+
     }
 }
